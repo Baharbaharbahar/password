@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="test.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="ajout.php" method="POST" name=""  onsubmit="return verif()">
+        <label for=""> Login: </label> <input type="text" name="login" id="login"> <br>
+        <label for="">Mot de passe</label> : <input type="password" name="password" id="password"> <br>
+        <label for="">  Nom:</label> <input type="text" name="nom" id="nom"> <br>
+        <label for=""> Prénom: </label><input type="text" name="prenom" id="prenom" value="bahaeddine"> <br>
+        <label for="">Date de Naissance:</label> <input type="date" name="date_naiss" id="date_naiss"> <br>
+        <label for="">Heure:</label> <input type="time" name="heure" id="heure"> <br>
+        <label for=""> Email:</label> <input type="email" name="mail" id="mail" placeholder="aaaa@bbbb.cc"> <br>
+        <fieldset>
+            <legend><label for="">Sexe :</label></legend>
+            <input type="radio" name="sexe" id="homme"   value="H">Homme
+            <input type="radio" name="sexe" id="femme" value="F">Femme
+        </fieldset>
+        <br>
+        <label for="">Sports:</label>
+        <input type="checkbox" name="foot" id="foot" value="O">Football
+        <input type="checkbox" name="hand" id="hand" value="O">Handball
+        <input type="checkbox" name="tennis" id="tennis" value="O">Tennis
+<br>
+<select name="pays" id="pays">
+<option>Veuillez choisir un pays SVP</option>
+<option value="TN">Tunisie</option>
+<option value="AL">Algérie</option>
+<option value="LY">Lybie</option>
+</select>
+<br>
+<label for="">Remarques:</label>
+<br>
+<textarea name="remarques" id="remarques" cols="30" rows="10"></textarea>
+<br>
+<input type="button" value="Mon bouton">
+<input type="submit" value="Envoyer" name="ajout">
+<input type="reset" value="Reinitialiser">
+</form>
+</body>
+</html>
